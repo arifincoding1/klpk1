@@ -1,7 +1,128 @@
-.panel { background: linear-gradient(135deg, #04d1f5, #1a1a1a); padding: 20px; border-radius: 20px; min-height: 200px; box-shadow: 0 15px 35px rgba(0,0,0,0.5); border: 1px solid #444; }
-.panel h3 { margin-top: 0; color: #4ecdc4; }
-#graph-toolkit table { border-collapse: collapse; width: 100%; margin: 10px 0; }
-#graph-toolkit td { border: 2px solid #555; padding: 8px; text-align: center; background: #333; }
-#graph-toolkit input { width: 50px; background: #444; color: white; border: 1px solid #666; border-radius: 4px; }
-#graph-result { background: #1a1a1a; padding: 15px; border-radius: 10px; margin-top: 10px; font-family: monospace; }
-select { background: #4ecdc4; color: #1a1a1a; padding: 10px; border-radius: 20px; border: none; font-weight: bold; }
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* BODY */
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #020617, #1e3a8a);
+    color: white;
+    text-align: center;
+  }
+  
+  /* OPENING */
+  #wrapper {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  #wrapper h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  #wrapper button {
+    padding: 12px 20px;
+    font-size: 1rem;
+    background: #4f46e5;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  #wrapper button:hover {
+    background: #6366f1;
+  }
+  
+  /* APP */
+  #app {
+    display: none;
+    padding: 30px;
+  }
+  
+  /* TITLE */
+  #current-song {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  /* AUDIO PLAYER */
+  audio {
+    margin: 15px 0;
+    width: 250px;
+  }
+  
+  /* BUTTONS */
+  button {
+    padding: 10px 15px;
+    margin: 5px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    background: #334155;
+    color: white;
+    transition: 0.2s;
+  }
+  
+  button:hover {
+    background: #475569;
+    transform: scale(1.05);
+  }
+  
+  /* GRAPH TOOLKIT */
+  #graph-toolkit {
+    margin-top: 20px;
+  }
+  
+  select {
+    padding: 8px;
+    border-radius: 6px;
+    border: none;
+    margin-right: 10px;
+  }
+  
+  /* RESULT BOX */
+  #graph-result {
+    margin-top: 20px;
+    padding: 15px;
+    background: #020617;
+    border-radius: 10px;
+    min-height: 100px;
+  }
+  
+  /* TABLE */
+  table {
+    border-collapse: collapse;
+    margin: 15px auto;
+  }
+  
+  td, th {
+    border: 1px solid #555;
+    padding: 10px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+  }
+  
+  /* MATRIX COLORS */
+  td {
+    background: #1e293b;
+  }
+  
+  td:hover {
+    background: #334155;
+  }
+  
+  /* HIGHLIGHT */
+  .highlight {
+    background: #22d3ee !important;
+    color: black;
+  }
