@@ -1,0 +1,7 @@
+.panel { background: linear-gradient(135deg, #04d1f5, #1a1a1a); padding: 20px; border-radius: 20px; min-height: 200px; box-shadow: 0 15px 35px rgba(0,0,0,0.5); border: 1px solid #444; }
+.panel h3 { margin-top: 0; color: #4ecdc4; }
+#graph-toolkit table { border-collapse: collapse; width: 100%; margin: 10px 0; }
+#graph-toolkit td { border: 2px solid #555; padding: 8px; text-align: center; background: #333; }
+#graph-toolkit input { width: 50px; background: #444; color: white; border: 1px solid #666; border-radius: 4px; }
+#graph-result { background: #1a1a1a; padding: 15px; border-radius: 10px; margin-top: 10px; font-family: monospace; }
+select { background: #4ecdc4; color: #1a1a1a; padding: 10px; border-radius: 20px; border: none; font-weight: bold; }

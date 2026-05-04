@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas klpk1</title>
+    <link rel="stylesheet" href="tugas.css">
+    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+    <script>mermaid.initialize({startOnLoad:false});</script>
+</head>
+<body>
+    <div id="wrapper" class="wrapper">
+        <h1>🎵 Music Graph Lab</h1>
+        <p>Matrix Editor + Subgraph + Labeled + MST + BFS + DFS + Player</p>
+        <button class="enter-btn" onclick="enterApp()">🚀 Launch Lab</button>
+    </div>
+
+    <div id="app" class="app">
+        <!-- Player -->
+        <div class="player">
+            <div id="current-song">Lagu Default</div>
+            <button onclick="togglePlay()">⏯️</button>
+            <button onclick="prevSong()">⏮️</button>
+            <button onclick="nextSongGraph()">🔗 Next Graph</button>
+            <button onclick="shareGraph()">📤 Share Graph</button>
+        </div>
+        <audio id="audio" preload="auto" loop></audio>
+
+        <!-- Features -->
+        <div class="features">
+            <div class="panel login">
+                <h3>🎧 music control</h3>
+                <button onclick="login()">Login Guest</button>
+                <p id="status">Ready</p>
+            </div>
+
+            <div class="panel playlist">
+                <h3>📋 Playlist</h3>
+                <ul id="playlist-list"></ul>
+                <button onclick="addToPlaylist()">+ Add</button>
+            </div>
+
+            <div class="panel graph-section">
+                <h3>🛠️ Graph Toolkit</h3>
+                <div id="graph-toolkit"></div>
+            </div>
+
+            <button onclick="showFlowchart()">📊 Flowchart</button>
+            <div id="flowchart-container" style="display:none;">
+                <pre class="mermaid">
+graph TD
+    A[Enter App] --> B[Player + Music]
+    B --> C[Matrix Editor]
+    C --> D[Subgraph/Labeled/MST]
+    D --> E[BFS/DFS Traversal]
+    E --> F[Next Graph Sync]
+                </pre>
+            </div>
+        </div>
+    </div>
+
+    <script src="alllin.js"></script>
+</body>
+</html>
